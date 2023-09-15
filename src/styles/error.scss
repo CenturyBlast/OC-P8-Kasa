@@ -1,0 +1,32 @@
+.Error-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 70px;
+}
+h1 {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 139px;
+}
+
+h2 {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Back-home {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+    margin-bottom: 139px;
+}

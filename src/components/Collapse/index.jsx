@@ -1,4 +1,4 @@
-import './../../styles/collapse.scss'
+import '../../sass/main.css'
 
 export default function Collapse(props) {
     const title = props.title;

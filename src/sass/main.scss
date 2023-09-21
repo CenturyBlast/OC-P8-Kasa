@@ -1,0 +1,18 @@
+@import "./utils/animations";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/collapse";
+@import "./components/rental";
+@import "./components/card";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/home";
+@import "./pages/error";
+@import "./pages/about";
+@import "./pages/rentalpage";

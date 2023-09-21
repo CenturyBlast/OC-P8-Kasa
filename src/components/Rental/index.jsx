@@ -1,3 +1,5 @@
+import '../../sass/main.css'
+
 export default function Rental(props) {
     const title = props.title;
     const location = props.location;

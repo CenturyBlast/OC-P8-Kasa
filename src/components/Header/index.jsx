@@ -1,6 +1,6 @@
-import './../../styles/header.scss'
+import '../../sass/main.css'
 import { Link } from 'react-router-dom'
-import logoHeader from './kasalogo.png'
+import logoHeader from '../../data/kasalogo.png'
 
 export default function Header() {
     return (

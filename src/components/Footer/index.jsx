@@ -1,5 +1,5 @@
-import './../../styles/footer.scss'
-import kasaFoot from './kasalogofoot.png'
+import '../../sass/main.css'
+import kasaFoot from '../../data/kasalogofoot.png'
 
 export default function Footer() {
     return (

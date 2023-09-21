@@ -1,4 +1,4 @@
-import './../../styles/rentalpage.scss';
+import '../../sass/main.css';
 import Rental from '../../components/Rental';
 import Collapse from './../../components/Collapse';
 

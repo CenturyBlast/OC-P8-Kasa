@@ -1,6 +1,6 @@
-import './../../styles/home.scss';
-import Card from './../../components/Card'
-import homeImg from './seafront.jpg'
+import '../../sass/main.css';
+import Card from '../../components/Card'
+import homeImg from '../../data/seafront.jpg'
 
 
 export default function Home() {

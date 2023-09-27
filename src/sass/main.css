@@ -5,42 +5,113 @@
 /*** Typography ***/
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Montserrat", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+a {
+  text-decoration: none;
 }
 
 /*** Collapse ***/
-.Frame {
-  background-color: #F6F6F6;
+.Collapse {
+  display: flex;
+  align-items: center;
   width: 1023px;
-  height: 272px;
+  padding: 10px 20px 10px 15px;
   border-radius: 5px;
+  background: #FF6060;
 }
 
 /*** Rental ***/
+.Rental__container {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  margin: 0 auto;
+}
+.Rental__infos {
+  display: flex;
+  flex-direction: column;
+}
+.Rental__host {
+  display: flex;
+  flex-direction: column;
+}
+
 /*** Card ***/
-.Card-link {
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.Card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75%;
+  border-radius: 10px 10px 0px 0px;
+}
+.Card__title {
+  color: #FF6060;
+  margin: 20px 10px;
+}
+
+/*** Carousel ***/
+.Carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 86%;
+  height: 415px;
+  border-radius: 25px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+.Carousel__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Carousel__arrow-left {
+  position: absolute;
+  left: 23px;
+}
+.Carousel__arrow-right {
+  position: absolute;
+  right: 23px;
 }
 
 /*** Header ***/
-.Header-content {
+.Header {
+  display: flex;
+  justify-content: center;
+}
+.Header img {
+  width: 210px;
+  height: 68px;
+}
+.Header__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  width: 86%;
+  margin-top: 45px;
 }
-
-.Header-nav {
+.Header__nav {
   display: flex;
   align-items: flex-start;
+  align-items: center;
   gap: 57px;
+}
+.Header__nav a {
+  font-size: 24px;
+  color: #FF6060;
+}
+.Header__nav a:focus {
+  text-decoration-line: underline;
 }
 
 /*** Footer ***/
@@ -51,71 +122,116 @@ code {
   color: white;
   height: 209px;
 }
-
-.Footer-content {
+.Footer__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 66px;
   margin-bottom: 29px;
-  gap: 29px;
+  font-size: 24px;
 }
 
 /*** Home ***/
-.Home-img {
-  width: 1240px;
+.Home {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+.Home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Home__img-banner {
+  width: 86%;
   height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.Home__img-text {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 48px;
+}
+.Home__cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  box-sizing: border-box;
+  width: 86%;
+  height: 829px;
+  border-radius: 25px;
+  padding: 56px 50px 43px;
+  margin: 43px auto 0px;
+  gap: 60px 50px;
+  background-color: #F6F6F6;
 }
 
 /*** Error ***/
-.Error-container {
+.Error {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 70px;
+  margin: 0px auto 139px;
 }
-
-h1 {
+.Error h1 {
   color: #FF6060;
-  font-family: Montserrat;
   font-size: 288px;
-  font-style: normal;
   font-weight: 700;
+  margin: 139px auto 0;
+}
+.Error h2 {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 139px;
+}
+.Error__back-home {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration-line: underline;
   margin-top: 139px;
 }
 
-h2 {
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-}
-
-.Back-home {
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  text-decoration-line: underline;
-  margin-bottom: 139px;
-}
-
 /*** About ***/
-.About-img {
-  width: 1240px;
+.About {
+  display: flex;
+  flex-direction: column;
+  margin: 38px auto;
+}
+.About__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About img {
+  width: 86%;
   height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-/*** Rental Page ***/
-.RentalPage-container {
+.About__collapse-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 38px;
+}
+
+/*** Rental Page ***/
+.RentalPage__main {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+.RentalPage__collapses {
+  display: flex;
+  gap: 76px;
+  width: 86%;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

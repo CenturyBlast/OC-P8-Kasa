@@ -1,8 +1,41 @@
 /*** Home ***/
+.Home {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
 
-.Home-img {
-    width: 1240px;
-    height: 223px;
-    border-radius: 25px;
-    object-fit: cover;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &-banner {
+            width: 86%;
+            height: 223px;
+            border-radius: 25px;
+            object-fit: cover;
+            // opacity: 0.7;
+        }
+
+        &-text {
+            position: absolute;
+            color: $color-white;
+            font-size: 48px;
+        }
+    }
+
+    &__cardlist {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        box-sizing: border-box;
+        width: 86%;
+        height: 829px;
+        border-radius: 25px;
+        padding: 56px 50px 43px;
+        margin: 43px auto 0px;
+        gap: 60px 50px;
+        background-color: $color-home-cardlist;
+    }
 }

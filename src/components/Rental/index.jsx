@@ -1,22 +1,27 @@
-import '../../sass/main.css'
+import '../../sass/main.css';
+import Carousel from '../../components/Carousel';
+// import carouselData from '../../data/logements.json';
 
-export default function Rental(props) {
-    const title = props.title;
-    const location = props.location;
-    const tags = props.tags;
+export default function Rental() {
+    // const title = props.title;
+    // const location = props.location;
+    // const tags = props.tags;
     return (
-        <div className="Rental-article">
-            <div className='Carousel'>
-                <img src='./../../../public/logements.json/{cover}' alt='intérieur' className='Carousel-img' />
+        <div className="Rental">
+            {/* {carouselData.map((item) => ( */}
+                <Carousel />
+            <div className="Rental__container">
+                <div className="Rental__infos">
+                    <h1 className='Rental__infos-title'>title</h1>
+                    <h2 className='Rental__infos-location'>location</h2>
+                    <p className='Rental__infos-tags'>tags</p>
+                </div>
+                <div className='Rental__host'>
+                    <p className='Rental__host-name'>host name</p>
+                    <img src='./../../../public/logements.json/{picture}' alt='propriétaire' className='Rental__host-picture' />
+                    <span className='Rental__host-rating'>stars</span>
+                </div>
             </div>
-            <h1 className='Title'>{title}</h1>
-            <h2 className='Location'>{location}</h2>
-            <div className='Host'>
-                <p className='Host-name'></p>
-                <img src='./../../../public/logements.json/{picture}' alt='propriétaire' className='Host-picture' />
-            </div>
-            <p className='Tags'>{tags}</p>
-            <span className='Rating'></span>
         </div>
     );
 }

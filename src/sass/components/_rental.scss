@@ -1,1 +1,20 @@
 /*** Rental ***/
+.Rental {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    &__infos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__host {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,13 +1,35 @@
 /*** Header ***/
-
-.Header-content {
+.Header {
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: center;
 
-.Header-nav {
-    display: flex;
-    align-items: flex-start;
-    gap: 57px;
+    & img {
+        width: 210px;
+        height: 68px;
+    }
 
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 68px;
+        width: 86%;
+        margin-top: 45px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+        gap: 57px;
+
+        & a {
+            font-size: 24px;
+            color: $color-kasa-red;
+        }
+
+        & a:focus {
+            text-decoration-line: underline;
+        }
+    }
 }

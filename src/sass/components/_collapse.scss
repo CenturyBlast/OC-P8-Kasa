@@ -1,9 +1,9 @@
 /*** Collapse ***/
-
-
-.Frame {
-    background-color: #F6F6F6;
+.Collapse {
+    display: flex;
+    align-items: center;
     width: 1023px;
-    height: 272px;
+    padding: 10px 20px 10px 15px;
     border-radius: 5px;
+    background: $color-kasa-red;
 }

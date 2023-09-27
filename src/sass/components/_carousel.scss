@@ -1,0 +1,26 @@
+/*** Carousel ***/
+.Carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 86%;
+    height: 415px;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: bisque;
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__arrow-left {
+        position: absolute;
+        left: 23px;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        right: 23px;
+    }
+}

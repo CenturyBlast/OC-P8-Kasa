@@ -5,16 +5,108 @@
         display: flex;
         justify-content: space-between;
         width: 86%;
-        margin: 0 auto;
+        margin: 0 auto 25px;
     }
 
     &__infos {
         display: flex;
         flex-direction: column;
+        color: $color-kasa-red;
+
+        & h1 {
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        & h2 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        &_tagbox {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &_tags {
+                text-align: center;
+                font-size: 14px;
+                background: $color-kasa-red;
+                color: $color-white;
+                min-width: 115px;
+                height: 25px;
+                padding: 6px 15px 0px;
+                margin-right: 10px;
+                border-radius: 10px;
+            }
+        }
     }
 
     &__host {
         display: flex;
         flex-direction: column;
+        width: 195px;
+
+        &_id {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+            margin-top: 24px;
+            gap: 15px;
+        }
+
+        &_name {
+            display: flex;
+            flex-direction: column;
+            color: $color-kasa-red;
+
+            & p {
+                text-align: right;
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+
+        &_picture {
+            width: 64px;
+            height: 64px;
+            object-position: center;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &_rating {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+    }
+
+    &__collapses {
+        display: flex;
+        gap: 76px;
+        margin: 24px auto;
+        width: 86%;
+
+        &_item {
+            width: 50%;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px auto;
+
+            &_item {
+                width: 100%;
+            }
+        }
     }
 }

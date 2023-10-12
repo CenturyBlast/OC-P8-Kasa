@@ -4,29 +4,35 @@
     flex-direction: column;
     margin: 50px auto;
 
-    &__img {
+    &__banner {
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
 
-        &-banner {
+        &::after {
+            @include darken_banner
+        }
+
+        &_img {
+            display: flex;
             width: 86%;
             height: 223px;
             border-radius: 25px;
             object-fit: cover;
-            // opacity: 0.7;
         }
 
-        &-text {
+        &_text {
             position: absolute;
             color: $color-white;
             font-size: 48px;
+            z-index: 2;
         }
     }
 
     &__cardlist {
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
         overflow: auto;
         box-sizing: border-box;

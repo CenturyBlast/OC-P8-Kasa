@@ -1,5 +1,4 @@
 /*** Error ***/
-
 .Error {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
     }
 
     & h1 {
-        color: #FF6060;
+        color: $color-kasa-red;
         font-size: 288px;
         font-weight: 700;
         margin: 139px auto 0;
@@ -23,7 +22,7 @@
     }
 
     & h2 {
-        color: #FF6060;
+        color: $color-kasa-red;
         font-size: 36px;
         font-weight: 500;
         margin: 139px auto 0;
@@ -36,7 +35,7 @@
     }
 
     &__back-home {
-        color: #FF6060;
+        color: $color-kasa-red;
         font-size: 18px;
         font-weight: 500;
         text-decoration-line: underline;
